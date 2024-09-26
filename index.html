@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<font-></font-family>
+<head>
+    <title>RevoU Mini Project</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <script>
+        // Ketika halaman dimuat, menampilkan prompt untuk memasukkan nama
+        window.onload = function() {
+            var userName = prompt("Masukkan nama Anda:");
+            if (userName) {
+                // Tampilkan nama
+                document.getElementById("name").innerText = userName + ", ";
+            } else {
+                // Jika tidak diisi, tampilkan teks default
+                document.getElementById("name").innerText = " Pengguna, ";
+            }
+        };
+    </script>
+
+</head>
+<body >
+    <header class="main-header">
+        <!--logo-->
+        <div class="profile-icon"></div>
+        <!--navigation-->
+        <nav>
+            <a href="#section-home">
+                <p><b>Home</b></p>
+            </a>
+            <a href="#section-animalprofile">
+                <p><b>Animal Profile</b></p>
+            </a>
+            <a href="#section-portofolio">
+                <p><b>Portofolio</b></p>
+            </a>
+            <a href="#section-message">
+                <p><b>Message Us</b></p>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- home -->
+        <section id="section-home">
+            <header>
+                <h2>Hi <span id="name"></span>Welcome To My Website.
+                    Ini adalah website mini project saya.
+                </h2>
+            <script src="./js/script.js"></script>
+            </header>
+            <article>
+                    <div class="photo-banner" class="">
+                        <img class="myslides" src="./assets/hewan.jpg" style="width:100%;">
+                    </div>
+                    <script src="./js/script.js"></script>
+            </article>
+           
+        </section>
+    <hr color="white"/>
+
+        <!--animalprofile-->
+        <section id="section-animalprofile">
+            <header>
+                <h1 style="color: rgb(0, 0, 0);">Animal</h1>
+            </header>
+            <div class="profile-icon-container">
+                <div>
+                    <div class="hewan1"></div>
+                    <h5>Burung cenderawasih termasuk ke
+                        dalam hewan langka dan hanya bisa
+                        ditemukan di Papua. Burung
+                        cendrawasih punya tampilan yang cantik
+                        yang membuat burung ini sering
+                        menjadi perburuan liar untuk
+                        didagangkan.</h5>
+                </div>
+                <div>
+                    <div class="hewan2"></div>
+                    <h5>Monyet yang unik ini juga dikenal
+                        sebagai hewan yang memiliki adaptasi
+                        yang sangat baik dengan lingkungan
+                        yang bersuhu sangat dingin. Umumnya,
+                        monyet hidung pesek rambut emas
+                        tinggal di hutan pegunungan.</h5>
+                </div>
+                <div>
+                    <div class="hewan3"></div>
+                    <h5>Orang utan dicirikan oleh rambut di
+                        seluruh badannya yang berwarna
+                        kemerahan. Satwa ini merupakan
+                        mamalia arboreal terbesar yang
+                        menghabiskan hampir seluruh
+                        waktunya di pepohonan. Lengannya
+                        yang panjang dan kuat serta tangan dan
+                        kakinya yang dapat mencengkeram erat.</h5>
+                </div>
+            </div>
+        </section>
+        <hr color="white"/>
+
+        <!--portofolio-->
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <br>
+            <h4 style="margin-left: 50px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui minima debitis iure molestias porro nam facilis laudantium. Praesentium nemo suscipit minima. Deserunt alias voluptatem illo? Possimus quos optio, corporis explicabo saepe praesentium aspernatur enim laboriosam veniam soluta amet deleniti accusamus, et, nostrum nesciunt distinctio esse inventore cumque illo.
+            </h4>
+        </section>
+            <hr color="white"/>
+
+        <!--message-->
+        <section id="section-message">
+            
+            <header>
+                <h1 style="color: black;">Message Us</h1>
+            </header>
+            <br/>
+            <section>
+                <section>
+
+                    <!--form-->
+                    <form name="message-form" onsubmit="return validateMessage()">
+                        <h3>Nama :<input placeholder="Nama" type="text" name="full-name" /></h3>
+                        <br />
+            
+                        <h3>Tanggal Lahir :<input type="date" name="birth-date" /></h3>
+                        <br/>
+            
+                        <h3>Jenis Kelamin : 
+                        <input type="radio" id="Laki-laki" name="gender" value="Laki-laki" />
+                        <label for="Laki-laki">Laki-laki</label>
+                        <input type="radio" id="Perempuan" name="gender" value="Perempuan" />
+                        <label for="Perempuan">Perempuan</label></h3>
+                        <br/>
+            
+                        <h3>Pesan : <textarea placeholder="Pesan" name="message"></textarea></h3>
+                        <br/>
+            
+                        <input type="submit" value="submit" />
+                        <script src="./js/script.js"></script>
+                    </form>
+                    
+                </section>
+                    <!--result form-->
+                    <div>
+                        <h3>Nama : <span id="sender-full-name"></span></h3>
+                        <h3>Tanggal lahir : <span id="sender-birth-date"></span></h3>
+                        <h3>Jenis kelamin : <span id="sender-gender"></span></h3>
+                        <h3>Pesan : <span id="sender-message"></span></h3>
+                    </div>
+                    <script src="./js/script.js"></script>
+            </section>
+        </section>
+
+        <!--responsive-->
+        
+    </main>
+    <hr color="white" style="height: 5px;"/>
+
+    <footer>
+        <p>Copyright © Sandry Chandra Putra 2024</p>
+    </footer>
+    
+</body>
+</html>
